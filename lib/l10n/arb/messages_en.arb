@@ -1,1 +1,11 @@
-{}
+{
+  "@@locale": "en",
+  "appTitle": "Flutter Code Generation",
+  "@appTitle": {
+    "description": "Main menu page title."
+  },
+  "localizationExamplesTitle": "Localization Examples",
+  "@localizationExamplesTitle": {
+    "description": "Localization examples page title."
+  }
+}

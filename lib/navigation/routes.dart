@@ -10,6 +10,7 @@ class RouteException implements Exception {
 
 class RouteGenerator {
   static const String mainMenuPage = '/';
+  static const String localizationExamplesPage = '/localization-examples';
 
   const RouteGenerator._();
 
@@ -17,6 +18,8 @@ class RouteGenerator {
     switch (settings.name) {
       case mainMenuPage:
         return MaterialPageRoute(builder: (_) => const MainMenu());
+      case localizationExamplesPage:
+        return MaterialPageRoute(builder: (_) => const LocalizationExamples());
       default:
         throw const RouteException('Route not found');
     }
