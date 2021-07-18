@@ -12,6 +12,8 @@ class RouteGenerator {
   static const String mainMenuPage = '/';
   static const String assetsExamplesPage = '/assets-examples';
   static const String localizationExamplesPage = '/localization-examples';
+  static const String stateManagementExamplesPage =
+      '/state-management-examples';
 
   const RouteGenerator._();
 
@@ -24,6 +26,10 @@ class RouteGenerator {
       case localizationExamplesPage:
         return MaterialPageRoute(
           builder: (_) => const LocalizationExamplesPage(),
+        );
+      case stateManagementExamplesPage:
+        return MaterialPageRoute(
+          builder: (_) => const StateManagementExamplesPage(),
         );
       default:
         throw const RouteException('Route not found');

@@ -12,5 +12,8 @@
   "assetsExamplesFlareText": "Flare",
   "assetsExamplesFontsText": "Šriftai",
   "assetsExamplesFontsHelloWorldText": "Labas, Pasauli!",
-  "assetsExamplesColorsText": "Spalvos"
+  "assetsExamplesColorsText": "Spalvos",
+  "stateManagementExamplesTitle": "Būsenos valdymo pavyzdžiai",
+  "stateManagementExamplesErrorText": "Oi, kažkas ne taip...",
+  "stateManagementExamplesDesignPatternsCountText": "{count,plural, =1 {{count} šablonas} other {Šablonų: {count}}}"
 }

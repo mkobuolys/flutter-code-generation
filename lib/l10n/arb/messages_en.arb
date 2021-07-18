@@ -79,5 +79,24 @@
   "assetsExamplesColorsText": "Colors",
   "@assetsExamplesColorsText": {
     "description": "Assets examples colors header text."
+  },
+  "stateManagementExamplesTitle": "State Management Examples",
+  "@stateManagementExamplesTitle": {
+    "description": "Assets examples page title."
+  },
+  "stateManagementExamplesErrorText": "Oops, something went wrong...",
+  "@stateManagementExamplesErrorText": {
+    "description": "Assets examples page error text."
+  },
+  "stateManagementExamplesDesignPatternsCountText": "{count,plural, =1 {{count} pattern} other {{count} patterns}}",
+  "@stateManagementExamplesDesignPatternsCountText": {
+    "description": "Assets examples page design patterns count text.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "10"
+      }
+    }
   }
 }

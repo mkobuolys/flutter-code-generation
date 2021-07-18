@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/constants.dart';
 import '../../l10n/l10n.dart';
 
 class LocalizationExamplesPage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _LocalizationExamplesPageState extends State<LocalizationExamplesPage> {
         title: Text(context.l10n.localizationExamplesTitle),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(LayoutConstants.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -34,7 +35,7 @@ class _LocalizationExamplesPageState extends State<LocalizationExamplesPage> {
               languageCode: 'en',
               counter: _counter,
             ),
-            const Divider(height: 16.0),
+            const Divider(height: LayoutConstants.spaceL),
             _LocalizationExamplesContent(
               languageCode: 'lt',
               counter: _counter,
@@ -79,17 +80,17 @@ class _LocalizationExamplesContent extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline4,
                 ),
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: LayoutConstants.spaceL),
               Text(
                 l10n.localizationExamplesCurrentDateText(DateTime.now()),
                 style: textStyle,
               ),
-              const SizedBox(height: 4.0),
+              const SizedBox(height: LayoutConstants.spaceS),
               Text(
                 l10n.localizationExamplesButtonPressedText(counter),
                 style: textStyle,
               ),
-              const SizedBox(height: 4.0),
+              const SizedBox(height: LayoutConstants.spaceS),
               Text(
                 l10n.localizationExamplesCurrencyText(counter * 345.67),
                 style: textStyle,

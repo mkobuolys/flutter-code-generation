@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../assets/assets.dart';
+import '../../constants/constants.dart';
 import '../../l10n/l10n.dart';
 
-const _divider = Divider(height: 16.0);
+const _divider = Divider(height: LayoutConstants.spaceL);
 
 class AssetsExamplesPage extends StatelessWidget {
   const AssetsExamplesPage();
@@ -17,7 +18,7 @@ class AssetsExamplesPage extends StatelessWidget {
         title: Text(l10n.assetsExamplesTitle),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(LayoutConstants.paddingL),
         child: Column(
           children: [
             _AssetsSection(
@@ -65,7 +66,7 @@ class _AssetsSection extends StatelessWidget {
     return Column(
       children: [
         Text(title, style: Theme.of(context).textTheme.headline4),
-        const SizedBox(height: 16.0),
+        const SizedBox(height: LayoutConstants.spaceL),
         child,
       ],
     );
@@ -83,9 +84,9 @@ class _IconsSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Assets.images.icons.githubLogo.svg(width: _iconWidth),
-        const SizedBox(width: 8.0),
+        const SizedBox(width: LayoutConstants.spaceM),
         Assets.images.icons.mediumLogo.svg(width: _iconWidth),
-        const SizedBox(width: 8.0),
+        const SizedBox(width: LayoutConstants.spaceM),
         Assets.images.icons.twitterLogo.svg(width: _iconWidth),
       ],
     );

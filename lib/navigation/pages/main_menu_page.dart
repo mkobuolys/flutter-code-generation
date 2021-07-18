@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/constants.dart';
 import '../../l10n/l10n.dart';
 import '../routes.dart';
 
@@ -14,9 +15,11 @@ class MainMenuPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(l10n.appTitle),
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(LayoutConstants.paddingXL),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _NavButton(
               label: l10n.assetsExamplesTitle,
@@ -25,6 +28,10 @@ class MainMenuPage extends StatelessWidget {
             _NavButton(
               label: l10n.localizationExamplesTitle,
               route: RouteGenerator.localizationExamplesPage,
+            ),
+            _NavButton(
+              label: l10n.stateManagementExamplesTitle,
+              route: RouteGenerator.stateManagementExamplesPage,
             ),
           ],
         ),
