@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../assets/assets.dart';
 import '../../l10n/l10n.dart';
 
+const _divider = Divider(height: 16.0);
+
 class AssetsExamplesPage extends StatelessWidget {
   const AssetsExamplesPage();
 
@@ -22,15 +24,25 @@ class AssetsExamplesPage extends StatelessWidget {
               title: l10n.assetsExamplesIconsText,
               child: const _IconsSection(),
             ),
-            const Divider(height: 16.0),
+            _divider,
             _AssetsSection(
               title: l10n.assetsExamplesImagesText,
               child: const _ImagesSection(),
             ),
-            const Divider(height: 16.0),
+            _divider,
             _AssetsSection(
               title: l10n.assetsExamplesFlareText,
               child: const _FlareSection(),
+            ),
+            _divider,
+            _AssetsSection(
+              title: l10n.assetsExamplesFontsText,
+              child: const _FontsSection(),
+            ),
+            _divider,
+            _AssetsSection(
+              title: l10n.assetsExamplesColorsText,
+              child: const _ColorsSection(),
             ),
           ],
         ),
@@ -117,6 +129,81 @@ class _FlareSection extends StatelessWidget {
           animation: 'walk',
         ),
       ),
+    );
+  }
+}
+
+class _FontsSection extends StatelessWidget {
+  const _FontsSection();
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      context.l10n.assetsExamplesFontsHelloWorldText,
+      style: Theme.of(context)
+          .textTheme
+          .headline2!
+          .copyWith(fontFamily: FontFamily.fuggles),
+    );
+  }
+}
+
+class _ColorsSection extends StatelessWidget {
+  const _ColorsSection();
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      children: [
+        const _ColorCube(color: ColorName.black),
+        const _ColorCube(color: ColorName.gray70),
+        const _ColorCube(color: ColorName.gray410),
+        _ColorCube(color: ColorName.crimsonRed.shade50),
+        _ColorCube(color: ColorName.crimsonRed.shade100),
+        _ColorCube(color: ColorName.crimsonRed.shade200),
+        _ColorCube(color: ColorName.crimsonRed.shade300),
+        _ColorCube(color: ColorName.crimsonRed.shade400),
+        _ColorCube(color: ColorName.crimsonRed.shade500),
+        _ColorCube(color: ColorName.crimsonRed.shade600),
+        _ColorCube(color: ColorName.crimsonRed.shade700),
+        _ColorCube(color: ColorName.crimsonRed.shade800),
+        _ColorCube(color: ColorName.crimsonRed.shade900),
+        _ColorCube(color: ColorName.yellowOcher.shade50),
+        _ColorCube(color: ColorName.yellowOcher.shade100),
+        _ColorCube(color: ColorName.yellowOcher.shade200),
+        _ColorCube(color: ColorName.yellowOcher.shade300),
+        _ColorCube(color: ColorName.yellowOcher.shade400),
+        _ColorCube(color: ColorName.yellowOcher.shade500),
+        _ColorCube(color: ColorName.yellowOcher.shade600),
+        _ColorCube(color: ColorName.yellowOcher.shade700),
+        _ColorCube(color: ColorName.yellowOcher.shade800),
+        _ColorCube(color: ColorName.yellowOcher.shade900),
+        _ColorCube(color: ColorName.yellowOcherAccent.shade100),
+        _ColorCube(color: ColorName.yellowOcherAccent.shade200),
+        _ColorCube(color: ColorName.yellowOcherAccent.shade400),
+        _ColorCube(color: ColorName.yellowOcherAccent.shade700),
+      ],
+    );
+  }
+}
+
+class _ColorCube extends StatelessWidget {
+  final Color color;
+  final double height;
+  final double width;
+
+  const _ColorCube({
+    required this.color,
+    this.height = 50.0,
+    this.width = 50.0,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: height,
+      width: width,
+      color: color,
     );
   }
 }

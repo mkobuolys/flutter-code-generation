@@ -60,12 +60,24 @@
   "@assetsExamplesIconsText": {
     "description": "Assets examples icons header text."
   },
+  "assetsExamplesImagesText": "Images",
+  "@assetsExamplesImagesText": {
+    "description": "Assets examples images header text."
+  },
   "assetsExamplesFlareText": "Flare",
   "@assetsExamplesFlareText": {
     "description": "Assets examples Flare header text."
   },
-  "assetsExamplesImagesText": "Images",
-  "@assetsExamplesImagesText": {
-    "description": "Assets examples images header text."
+  "assetsExamplesFontsText": "Fonts",
+  "@assetsExamplesFontsText": {
+    "description": "Assets examples fonts header text."
+  },
+  "assetsExamplesFontsHelloWorldText": "Hello, World!",
+  "@assetsExamplesFontsHelloWorldText": {
+    "description": "Assets examples fonts header text."
+  },
+  "assetsExamplesColorsText": "Colors",
+  "@assetsExamplesColorsText": {
+    "description": "Assets examples colors header text."
   }
 }
