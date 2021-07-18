@@ -2,18 +2,101 @@ import 'package:flutter/material.dart';
 
 import '../../l10n/l10n.dart';
 
-class LocalizationExamples extends StatelessWidget {
+class LocalizationExamples extends StatefulWidget {
   const LocalizationExamples();
 
   @override
-  Widget build(BuildContext context) {
-    final l10n = context.l10n;
+  _LocalizationExamplesState createState() => _LocalizationExamplesState();
+}
 
+class _LocalizationExamplesState extends State<LocalizationExamples> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(l10n.localizationExamplesTitle),
+        title: Text(context.l10n.localizationExamplesTitle),
       ),
-      body: Container(),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _LocalizationExamplesContent(
+              languageCode: 'en',
+              counter: _counter,
+            ),
+            const Divider(height: 32.0),
+            _LocalizationExamplesContent(
+              languageCode: 'lt',
+              counter: _counter,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        child: const Icon(Icons.add),
+      ), //
+    );
+  }
+}
+
+class _LocalizationExamplesContent extends StatelessWidget {
+  final String languageCode;
+  final int counter;
+
+  const _LocalizationExamplesContent({
+    required this.languageCode,
+    required this.counter,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final textStyle = Theme.of(context).textTheme.subtitle2;
+
+    return Localizations.override(
+      context: context,
+      locale: Locale(languageCode),
+      child: Builder(
+        builder: (context) {
+          final l10n = context.l10n;
+
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Text(
+                  l10n.localizationExamplesLocaleText(languageCode),
+                  style: Theme.of(context).textTheme.headline4,
+                ),
+              ),
+              const SizedBox(height: 16.0),
+              Text(
+                l10n.localizationExamplesCurrentDateText(DateTime.now()),
+                style: textStyle,
+              ),
+              const SizedBox(height: 4.0),
+              Text(
+                l10n.localizationExamplesButtonPressedText(counter),
+                style: textStyle,
+              ),
+              const SizedBox(height: 4.0),
+              Text(
+                l10n.localizationExamplesCurrencyText(counter * 345.67),
+                style: textStyle,
+              ),
+            ],
+          );
+        },
+      ),
     );
   }
 }
