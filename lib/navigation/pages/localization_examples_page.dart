@@ -34,7 +34,7 @@ class _LocalizationExamplesPageState extends State<LocalizationExamplesPage> {
               languageCode: 'en',
               counter: _counter,
             ),
-            const Divider(height: 32.0),
+            const Divider(height: 16.0),
             _LocalizationExamplesContent(
               languageCode: 'lt',
               counter: _counter,

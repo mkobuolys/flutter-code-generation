@@ -51,5 +51,21 @@
         "example": "10"
       }
     }
+  },
+  "assetsExamplesTitle": "Assets Examples",
+  "@assetsExamplesTitle": {
+    "description": "Assets examples page title."
+  },
+  "assetsExamplesIconsText": "Icons",
+  "@assetsExamplesIconsText": {
+    "description": "Assets examples icons header text."
+  },
+  "assetsExamplesFlareText": "Flare",
+  "@assetsExamplesFlareText": {
+    "description": "Assets examples Flare header text."
+  },
+  "assetsExamplesImagesText": "Images",
+  "@assetsExamplesImagesText": {
+    "description": "Assets examples images header text."
   }
 }

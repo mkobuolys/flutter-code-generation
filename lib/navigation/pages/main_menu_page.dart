@@ -19,6 +19,10 @@ class MainMenuPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             _NavButton(
+              label: l10n.assetsExamplesTitle,
+              route: RouteGenerator.assetsExamplesPage,
+            ),
+            _NavButton(
               label: l10n.localizationExamplesTitle,
               route: RouteGenerator.localizationExamplesPage,
             ),

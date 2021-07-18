@@ -5,5 +5,9 @@
   "localizationExamplesLocaleText": "Lokalė: {locale}",
   "localizationExamplesCurrentDateText": "Šiandienos data: {date}",
   "localizationExamplesCurrencyText": "Kaina: {price}",
-  "localizationExamplesButtonPressedText": "{count,plural, =0 {Jūs dar nepaspaudėte mygtuko} =1 {Jūs paspaudėte mygtuką vieną kartą} other {Jūs paspaudėte mygtuką tiek kartų: {count}}}"
+  "localizationExamplesButtonPressedText": "{count,plural, =0 {Jūs dar nepaspaudėte mygtuko} =1 {Jūs paspaudėte mygtuką vieną kartą} other {Jūs paspaudėte mygtuką tiek kartų: {count}}}",
+  "assetsExamplesTitle": "Resursų pavyzdžiai",
+  "assetsExamplesIconsText": "Piktogramos",
+  "assetsExamplesFlareText": "Flare",
+  "assetsExamplesImagesText": "Paveikslėliai"
 }
