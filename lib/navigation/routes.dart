@@ -17,9 +17,11 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case mainMenuPage:
-        return MaterialPageRoute(builder: (_) => const MainMenu());
+        return MaterialPageRoute(builder: (_) => const MainMenuPage());
       case localizationExamplesPage:
-        return MaterialPageRoute(builder: (_) => const LocalizationExamples());
+        return MaterialPageRoute(
+          builder: (_) => const LocalizationExamplesPage(),
+        );
       default:
         throw const RouteException('Route not found');
     }

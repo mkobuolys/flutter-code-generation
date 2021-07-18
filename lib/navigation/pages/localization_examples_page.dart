@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../l10n/l10n.dart';
 
-class LocalizationExamples extends StatefulWidget {
-  const LocalizationExamples();
+class LocalizationExamplesPage extends StatefulWidget {
+  const LocalizationExamplesPage();
 
   @override
-  _LocalizationExamplesState createState() => _LocalizationExamplesState();
+  _LocalizationExamplesPageState createState() =>
+      _LocalizationExamplesPageState();
 }
 
-class _LocalizationExamplesState extends State<LocalizationExamples> {
+class _LocalizationExamplesPageState extends State<LocalizationExamplesPage> {
   int _counter = 0;
 
   void _incrementCounter() {

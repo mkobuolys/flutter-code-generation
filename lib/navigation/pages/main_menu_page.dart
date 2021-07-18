@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../l10n/l10n.dart';
 import '../routes.dart';
 
-class MainMenu extends StatelessWidget {
-  const MainMenu();
+class MainMenuPage extends StatelessWidget {
+  const MainMenuPage();
 
   @override
   Widget build(BuildContext context) {
