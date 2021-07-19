@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^7.0.1
+  # Internationalization support.
   flutter_localizations:
     sdk: flutter
   flutter_svg: ^0.22.0
@@ -56,6 +57,7 @@ flutter_gen:
 
 flutter:
   uses-material-design: true
+  # Adds code generation (synthetic package) support
   generate: true
   assets:
     - assets/color/
