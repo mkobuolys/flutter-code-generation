@@ -1,16 +1,31 @@
-# flutter_code_generation
+# Flutter Code Generation Examples
 
-A new Flutter project.
+A Flutter Code Generation Examples app.
 
-## Getting Started
+Code generation packages/tools used in the app:
 
-This project is a starting point for a Flutter application.
+- flutter_localization/intl
+- build_runner
+- flutter_gen/flutter_gen_runner
+- freezed/freezed_annotation
+- json_serializable
+- mason
 
-A few resources to get you started if this is your first Flutter project:
+## Building
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+You can follow these instructions to build the app and install it onto your device.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Prerequisites
+
+If you are new to Flutter, please first follow the [Flutter Setup](https://flutter.dev/setup/) guide.
+
+### Building and installing the Flutter Code Generation Examples app
+
+```
+git clone https://github.com/mkobuolys/flutter-code-generation.git
+cd flutter-code-generation
+flutter pub run build_runner build
+flutter run
+```
+
+The `flutter run` command both builds and installs the Flutter app to your device or emulator.
