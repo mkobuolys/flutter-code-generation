@@ -1,0 +1,5 @@
+name: page_widget
+description: A custom page widget brick.
+vars:
+  - name
+  - routable
