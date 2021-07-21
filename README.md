@@ -11,6 +11,12 @@ Code generation packages/tools used in the app:
 - json_serializable
 - mason
 
+## Presentation
+
+Presentation slides are provided [here](slides/Flutter Code Generation.pdf).
+
+Talk video could be found here: TBD.
+
 ## Building
 
 You can follow these instructions to build the app and install it onto your device.
