@@ -13,7 +13,7 @@ Code generation packages/tools used in the app:
 
 ## Presentation
 
-Presentation slides are provided [here](slides/Flutter Code Generation.pdf).
+Presentation slides are provided [here](presentation-slides.pdf).
 
 Talk video could be found here: TBD.
 
