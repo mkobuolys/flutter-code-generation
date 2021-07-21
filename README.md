@@ -1,6 +1,6 @@
 # Flutter Code Generation Examples
 
-A Flutter Code Generation Examples app.
+![Repository header](header.png)
 
 Code generation packages/tools used in the app:
 
