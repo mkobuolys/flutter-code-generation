@@ -14,9 +14,11 @@ class DesignPatternsRepository {
         Assets.json.designPatterns,
       );
       final categories = (json.decode(categoriesJson) as List)
-          .map((categoryJson) => DesignPatternsCategory.fromJson(
-                categoryJson as Map<String, dynamic>,
-              ))
+          .map(
+            (categoryJson) => DesignPatternsCategory.fromJson(
+              categoryJson as Map<String, dynamic>,
+            ),
+          )
           .toList();
 
       // Simulates a delayed data loading

@@ -38,7 +38,7 @@ class _DesignPatternsCategoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      margin: const EdgeInsets.all(0),
+      margin: EdgeInsets.zero,
       color: Color(int.parse(category.color)),
       elevation: 8.0,
       clipBehavior: Clip.antiAlias,
