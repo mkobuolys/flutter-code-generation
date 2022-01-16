@@ -68,6 +68,10 @@
   "@assetsExamplesFlareText": {
     "description": "Assets examples Flare header text."
   },
+  "assetsExamplesRiveText": "Rive",
+  "@assetsExamplesRiveText": {
+    "description": "Assets examples Rive header text."
+  },
   "assetsExamplesFontsText": "Fonts",
   "@assetsExamplesFontsText": {
     "description": "Assets examples fonts header text."

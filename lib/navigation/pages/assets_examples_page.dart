@@ -34,6 +34,10 @@ class AssetsExamplesPage extends StatelessWidget {
               title: l10n.assetsExamplesFlareText,
               child: const _FlareSection(),
             ),
+            _AssetsSection(
+              title: l10n.assetsExamplesRiveText,
+              child: const _RiveSection(),
+            ),
             _divider,
             _AssetsSection(
               title: l10n.assetsExamplesFontsText,
@@ -128,6 +132,21 @@ class _FlareSection extends StatelessWidget {
         child: Assets.flare.penguin.flare(
           animation: 'walk',
         ),
+      ),
+    );
+  }
+}
+
+class _RiveSection extends StatelessWidget {
+  const _RiveSection();
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: SizedBox(
+        height: 150.0,
+        width: 200.0,
+        child: Assets.rive.vehicles.rive(),
       ),
     );
   }
