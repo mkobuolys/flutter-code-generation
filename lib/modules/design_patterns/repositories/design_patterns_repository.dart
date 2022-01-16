@@ -1,9 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart' show rootBundle;
-
-import '../../../assets/assets.dart';
-import '../models/models.dart';
+import 'package:flutter_code_generation/assets/assets.dart';
+import 'package:flutter_code_generation/modules/design_patterns/models/models.dart';
 
 class DesignPatternsJsonNotFoundException implements Exception {}
 

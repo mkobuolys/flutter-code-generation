@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../constants/constants.dart';
-import '../../l10n/l10n.dart';
+import 'package:flutter_code_generation/constants/constants.dart';
+import 'package:flutter_code_generation/l10n/l10n.dart';
 
 class LocalizationExamplesPage extends StatefulWidget {
   const LocalizationExamplesPage();

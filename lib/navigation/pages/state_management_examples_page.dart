@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../l10n/l10n.dart';
-import '../../modules/design_patterns/design_patterns.dart';
+import 'package:flutter_code_generation/l10n/l10n.dart';
+import 'package:flutter_code_generation/modules/design_patterns/design_patterns.dart';
 
 class StateManagementExamplesPage extends StatelessWidget {
   const StateManagementExamplesPage();

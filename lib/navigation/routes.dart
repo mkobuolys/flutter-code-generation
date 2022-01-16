@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'pages/pages.dart';
+import 'package:flutter_code_generation/navigation/pages/pages.dart';
 
 class RouteException implements Exception {
   final String message;

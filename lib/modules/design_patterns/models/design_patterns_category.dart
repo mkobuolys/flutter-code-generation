@@ -1,6 +1,5 @@
+import 'package:flutter_code_generation/modules/design_patterns/models/design_pattern.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-import '../design_patterns.dart';
 
 part 'design_patterns_category.freezed.dart';
 part 'design_patterns_category.g.dart';

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import '../../assets/assets.dart';
-import '../../constants/constants.dart';
-import '../../l10n/l10n.dart';
+import 'package:flutter_code_generation/assets/assets.dart';
+import 'package:flutter_code_generation/constants/constants.dart';
+import 'package:flutter_code_generation/l10n/l10n.dart';
 
 const _divider = Divider(height: LayoutConstants.spaceL);
 

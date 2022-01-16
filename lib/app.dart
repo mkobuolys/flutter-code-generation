@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'l10n/l10n.dart';
-import 'navigation/routes.dart';
+import 'package:flutter_code_generation/l10n/l10n.dart';
+import 'package:flutter_code_generation/navigation/routes.dart';
 
 class App extends StatelessWidget {
   const App();

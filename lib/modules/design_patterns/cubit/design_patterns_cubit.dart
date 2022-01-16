@@ -1,8 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_code_generation/modules/design_patterns/models/models.dart';
+import 'package:flutter_code_generation/modules/design_patterns/repositories/repositories.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-import '../models/models.dart';
-import '../repositories/design_patterns_repository.dart';
 
 part 'design_patterns_cubit.freezed.dart';
 part 'design_patterns_state.dart';
