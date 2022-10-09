@@ -208,20 +208,16 @@ class _ColorsSection extends StatelessWidget {
 
 class _ColorCube extends StatelessWidget {
   final Color color;
-  final double height;
-  final double width;
 
   const _ColorCube({
     required this.color,
-    this.height = 50.0,
-    this.width = 50.0,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height,
-      width: width,
+      height: 50.0,
+      width: 50.0,
       color: color,
     );
   }

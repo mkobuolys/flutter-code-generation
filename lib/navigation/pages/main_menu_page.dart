@@ -3,6 +3,8 @@ import 'package:flutter_code_generation/constants/constants.dart';
 import 'package:flutter_code_generation/l10n/l10n.dart';
 import 'package:flutter_code_generation/navigation/routes.dart';
 
+const _spacer = SizedBox(height: LayoutConstants.spaceM);
+
 class MainMenuPage extends StatelessWidget {
   const MainMenuPage();
 
@@ -24,10 +26,12 @@ class MainMenuPage extends StatelessWidget {
               label: l10n.assetsExamplesTitle,
               route: RouteGenerator.assetsExamplesPage,
             ),
+            _spacer,
             _NavButton(
               label: l10n.localizationExamplesTitle,
               route: RouteGenerator.localizationExamplesPage,
             ),
+            _spacer,
             _NavButton(
               label: l10n.stateManagementExamplesTitle,
               route: RouteGenerator.stateManagementExamplesPage,
