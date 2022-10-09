@@ -42,9 +42,14 @@ flutter_gen:
     enabled: true
     inputs:
       - assets/color/colors.xml
+    outputs:
+      class_name: ColorName
 
   assets:
     enabled: true
+    outputs:
+      class_name: Assets
+
     # Assets.imagesDash
     # style: camel-case
 
@@ -56,6 +61,8 @@ flutter_gen:
 
   fonts:
     enabled: true
+    outputs:
+      class_name: FontFamily
 
 flutter:
   uses-material-design: true
