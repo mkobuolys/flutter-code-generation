@@ -1,5 +1,11 @@
 name: page_widget
 description: A custom page widget brick.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev <0.1.0"
+
 vars:
   - name
   - routable
