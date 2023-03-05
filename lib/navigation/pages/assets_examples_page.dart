@@ -68,7 +68,7 @@ class _AssetsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(title, style: Theme.of(context).textTheme.headline4),
+        Text(title, style: Theme.of(context).textTheme.headlineMedium),
         const SizedBox(height: LayoutConstants.spaceL),
         child,
       ],
@@ -161,8 +161,8 @@ class _FontsSection extends StatelessWidget {
       context.l10n.assetsExamplesFontsHelloWorldText,
       style: Theme.of(context)
           .textTheme
-          .headline2!
-          .copyWith(fontFamily: FontFamily.fuggles),
+          .displayMedium
+          ?.copyWith(fontFamily: FontFamily.fuggles),
     );
   }
 }

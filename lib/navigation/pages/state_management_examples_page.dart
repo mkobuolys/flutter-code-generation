@@ -59,9 +59,8 @@ class _ErrorView extends StatelessWidget {
     return Center(
       child: Text(
         context.l10n.stateManagementExamplesErrorText,
-        style: Theme.of(context).textTheme.headline6!.copyWith(
-              color: Colors.red,
-            ),
+        style:
+            Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.red),
         textAlign: TextAlign.center,
       ),
     );

@@ -61,7 +61,7 @@ class _LocalizationExamplesContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = Theme.of(context).textTheme.subtitle2;
+    final textStyle = Theme.of(context).textTheme.titleSmall;
 
     return Localizations.override(
       context: context,
@@ -76,7 +76,7 @@ class _LocalizationExamplesContent extends StatelessWidget {
               Center(
                 child: Text(
                   l10n.localizationExamplesLocaleText(languageCode),
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
               const SizedBox(height: LayoutConstants.spaceL),
