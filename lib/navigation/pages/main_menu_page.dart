@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_code_generation/constants/constants.dart';
 import 'package:flutter_code_generation/l10n/l10n.dart';
-import 'package:flutter_code_generation/navigation/routes.dart';
+import 'package:flutter_code_generation/navigation/router.dart';
 
 const _spacer = SizedBox(height: LayoutConstants.spaceM);
 
@@ -24,17 +24,17 @@ class MainMenuPage extends StatelessWidget {
           children: [
             _NavButton(
               label: l10n.assetsExamplesTitle,
-              route: RouteGenerator.assetsExamplesPage,
+              onPressed: () => const AssetsExamplesRoute().go(context),
             ),
             _spacer,
             _NavButton(
               label: l10n.localizationExamplesTitle,
-              route: RouteGenerator.localizationExamplesPage,
+              onPressed: () => const LocalizationExamplesRoute().go(context),
             ),
             _spacer,
             _NavButton(
               label: l10n.stateManagementExamplesTitle,
-              route: RouteGenerator.stateManagementExamplesPage,
+              onPressed: () => const StateManagementExamplesRoute().go(context),
             ),
           ],
         ),
@@ -45,17 +45,17 @@ class MainMenuPage extends StatelessWidget {
 
 class _NavButton extends StatelessWidget {
   final String label;
-  final String route;
+  final VoidCallback onPressed;
 
   const _NavButton({
     required this.label,
-    required this.route,
+    required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () => Navigator.of(context).pushNamed(route),
+      onPressed: onPressed,
       child: Text(label),
     );
   }
